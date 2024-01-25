@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phon"
+    tools:context=".ui.Users.MainActivity">
+
+   <ImageView
+       android:id="@+id/appLogo"
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="100dp"
+       android:src="@drawable/logo" />
+
+   <ImageView
+       android:id="@+id/appProducty"
+       android:layout_width="300dp"
+       android:layout_height="300dp"
+       android:layout_below="@+id/appLogo"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/producty" />
+
+   <TextView
+       android:id="@+id/appSlogan"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/appProducty"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="10dp"
+       android:text="Покупайте товары не выходя из дома"
+       android:textAlignment="center"
+       android:textColor="@android:color/black"
+       android:textSize="18dp"
+       android:textStyle="bold" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btnStart"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/appSlogan"
+       android:background="@drawable/button"
+       android:layout_centerHorizontal="true"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="50dp"
+       android:layout_marginRight="30dp"
+       android:textAllCaps="false"
+       android:text="Начать"
+       android:textSize="18dp"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btnRegister"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnStart"
+       android:background="@drawable/input_design"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:textAllCaps="false"
+       android:text="Bсе еще нет аккаута?  Зарегестрироваться"
+       android:textSize="14dp"/>
+
+
+</RelativeLayout>
